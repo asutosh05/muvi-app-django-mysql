@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>My Muvi </h1>
+<div class="row">
+    <div class="col-lg-12 text-center">
+        <h3 class="mt-5">{{object.name}}</h3>
+    </div>
+</div>
+
+{% if form.error %}
+{{ form.error }}
+{% endif %}
+<form method="POST">{% csrf_token %}    
+    {{ form.as_p }}
+    <button type="submit">Save</button>
+    
+    
+</form>
+
+{% endblock %}
