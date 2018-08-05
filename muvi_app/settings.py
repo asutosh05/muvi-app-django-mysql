@@ -80,7 +80,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'muvi',
         'USER': os.environ["C9_USER"],
-        'PASSWORD': '',
+        'PASSWORD': 'Password1',
         'HOST': os.environ["IP"],
         'PORT': '3306',
     }
